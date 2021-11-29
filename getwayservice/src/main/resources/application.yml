@@ -1,0 +1,35 @@
+server:
+  port: 8763
+spring:
+#  cloud:
+#    config:
+#      server:
+#        svn:
+#          uri: https://192.168.100.188/svn/Project/LMS2.0/configfile/desigin/
+#          username: zhuss
+#          password: zss123!
+#        default-label: trunk
+#  profiles:
+#    active: subversion
+  application:
+    name: getway-server
+  cloud:
+#    config:
+#      discovery:
+#        enabled: true
+#        service-id: config-server
+#      profile: dev
+#      label: master
+    gateway:
+      enabled: true  #开启网关
+      discovery:
+        locator:
+          enabled: true #开启自动路由,以服务id建立路由，服务id默认大写
+          lower-case-service-id: true #服务id设置为小写
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    instance-id: gateway-server
+    prefer-ip-address: true
