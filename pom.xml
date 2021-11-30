@@ -11,7 +11,7 @@
     <modules>
         <module>eureka</module>
         <module>configserver</module>
-        <module>getwayservice</module>
+        <module>gatewayservice</module>
         <module>busiservice</module>
     </modules>
     <parent>

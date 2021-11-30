@@ -7,9 +7,9 @@ spring:
         git:
           uri: https://github.com/zhusensen/config-repo.git
           skipSslValidation: true
-          search-paths:
-          username:
-          password:
+#          search-paths:
+#          username:
+#          password:
           default-label: main
 #svn
 #        svn:
