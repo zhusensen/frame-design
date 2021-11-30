@@ -1,25 +1,8 @@
 server:
   port: 8763
 spring:
-#  cloud:
-#    config:
-#      server:
-#        svn:
-#          uri: https://192.168.100.188/svn/Project/LMS2.0/configfile/desigin/
-#          username: zhuss
-#          password: zss123!
-#        default-label: trunk
-#  profiles:
-#    active: subversion
   application:
     name: getway-server
-  cloud:
-#    config:
-#      discovery:
-#        enabled: true
-#        service-id: config-server
-#      profile: dev
-#      label: master
     gateway:
       enabled: true  #开启网关
       discovery:

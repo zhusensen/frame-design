@@ -1,8 +1,16 @@
-#spring:
-#  cloud:
+server:
+  port: 8764
+spring:
+  application:
+    name: busi-server
+  cloud:
+    config:
+      uri: http://localhost:8762
+      label: main
+      name: busi
+      profile: dev
+#svn
 #    config:
-#      discovery:
-#        enable: true
-#        service-id: config-server
+#      uri: http://localhost:8762
 #      name: busi
 #      profile: dev
